@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2010-2023 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -170,6 +170,7 @@
 		<Map Number="140" File="140_BloodyTarkan.att" />
 		<Map Number="141" File="141_TormentaIsland.att" />
 		<Map Number="142" File="142_TwistedKarutan.att" />
+		<Map Number="143" File="143_Kardamahal_Underground_Temple.att" />
 	</DefaultMaps>
 	
 	<CrywolfEventAttr>

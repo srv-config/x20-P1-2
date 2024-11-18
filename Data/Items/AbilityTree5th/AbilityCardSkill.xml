@@ -100,4 +100,7 @@
 	<Class ID="13"> <!-- IK -->
 		<Skill ID="46" Type="0" ItemCat="20" ItemIndex="210" SkillIndex="2082" ReqSkill="1233" StaticOptionIndex="2" StaticOptionValue="1" FormulaID="49" />
 	</Class>
+	<Class ID="14"> <!-- AC -->
+		<Skill ID="49" Type="0" ItemCat="20" ItemIndex="258" SkillIndex="2094" ReqSkill="1239" StaticOptionIndex="2" StaticOptionValue="1" FormulaID="286" />
+	</Class>
 </AbilityCardSkill>

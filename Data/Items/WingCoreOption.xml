@@ -74,6 +74,7 @@
 		<Core Index="6" Type="1" ItemCat="13" ItemIndex="188" OptionIndex="23" FormulaGroup="14" FormulaID="2" TextID="1386" Name="Wing attack power/magic power/curse power increase +%d"/>
 		<Core Index="7" Type="1" ItemCat="13" ItemIndex="189" OptionIndex="23" FormulaGroup="14" FormulaID="2" TextID="1386" Name="Wing attack power/magic power/curse power increase +%d"/>
 		<Core Index="8" Type="1" ItemCat="13" ItemIndex="190" OptionIndex="23" FormulaGroup="14" FormulaID="2" TextID="1386" Name="Wing attack power/magic power/curse power increase +%d"/>
+		<Core Index="9" Type="1" ItemCat="13" ItemIndex="191" OptionIndex="23" FormulaGroup="14" FormulaID="2" TextID="1386" Name="Wing attack power/magic power/curse power increase +%d"/>
 	</WingCoreList>
 	<WingCoreOption>
 		<Option CoreType="1" Index="11" Value="170" TextID="1390" Rate="100000" Name="Elemental attack power increased by %d" />

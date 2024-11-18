@@ -26,6 +26,7 @@ CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker,
 CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
 CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
 CLASS_ILLUSIONKNIGHT								  = 13	-- Illusion Knight, Mirage Knight, Illusion Master, Mystic Knight
+CLASS_ALCHEMIST										  = 14
 
 -- SkillID: 378, 483, Flame Strengthener
 function FlameCalc_Master(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -1788,6 +1789,43 @@ function IllusionKnightBladeStorm_MasterLevel1_Calc(InDamage, Strength, Dexterit
 	elseif (BarrageCount == 3) then
 		OutDamage = (InDamage * (200 + (Strength / 30) + (Dexterity / 30))) / 100;
 	end
+
+	return OutDamage
+end
+
+-- SkillID: 900, Angel Homunculus Strengthener
+function AlchemistAngelHomunculus_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+
+-- SkillID: 901, Angel Homunculus Mastery
+function AlchemistAngelHomunculus_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 903, Ignition Bomber Strengthener
+function AlchemistIgnitionBomber_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 903, Ignition Bomber Mastery
+function AlchemistIgnitionBomber_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
 
 	return OutDamage
 end

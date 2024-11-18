@@ -26,6 +26,7 @@ CLASS_GUNCRUSHER									  = 10
 CLASS_LIGHTWIZARD									  = 11
 CLASS_LEMURIAMAGE									  = 12
 CLASS_ILLUSIONKNIGHT								  = 13
+CLASS_ALCHEMIST										  = 14
 
 -- SkillID: 2037, Meteor Storm of Gale
 function MeteorStorm_5thEnchant_Wizard(InDamage, Energy)
@@ -329,6 +330,15 @@ end
 -- SkillID: 2089, Wild Breath of Gale
 function WildBreath_5thEnchant_Lancer(InDamage, Strength, SkillTreeBonus)
 	local OutDamage = (InDamage * 0.5) * (Strength / 10 + 97 + SkillTreeBonus) / 100.0
+
+	return OutDamage
+end
+
+-- SkillID: 2094, Fiery Countess Weapon
+function AlchemistCountlessWeapon_5thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
 
 	return OutDamage
 end

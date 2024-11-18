@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2020 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == Modify if you know what you do only!
 // == File is a part of IGCN Group MuOnline Server files.
@@ -59,6 +59,7 @@
 //		~ 11: Light Wizard
 //		~ 12: Lemuria Mage
 //		~ 13: Illusion Knight
+//		~ 14: Alchemist
 //
 // ### LuckyItem::ItemLevelDrawSettings::List ###
 //	ID: ID of the section, links to ID from TicketSettings section
@@ -138,6 +139,7 @@
 			<Item Cat="7" Index="250" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="11" /> <!-- Light Ray Helmet -->
 			<Item Cat="7" Index="268" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="12" /> <!-- Mage Legendary Helmet -->
 			<Item Cat="7" Index="316" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="13" /> <!-- Steel Plate Helmet -->
+			<Item Cat="7" Index="353" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="14" /> <!-- Alchemist Red Spirit Helm -->
 		</List>
 		<List ID="2" Name="2nd Lucky Armor Ticket">
 			<Item Cat="8" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Armor -->
@@ -154,6 +156,7 @@
 			<Item Cat="8" Index="250" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="11" /> <!-- Light Ray Armor -->
 			<Item Cat="8" Index="268" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="12" /> <!-- Mage Legendary Armor -->
 			<Item Cat="8" Index="316" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="13" /> <!-- Steel Plate Armor -->
+			<Item Cat="8" Index="353" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="14" /> <!-- Alchemist Red Spirit Armor -->
 		</List>
 		<List ID="3" Name="2nd Lucky Pants Ticket">
 			<Item Cat="9" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Pants -->
@@ -170,6 +173,7 @@
 			<Item Cat="9" Index="250" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="11" /> <!-- Light Ray Pants -->
 			<Item Cat="9" Index="268" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="12" /> <!-- Mage Legendary Pants -->
 			<Item Cat="9" Index="316" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="13" /> <!-- Steel Plate Pants -->
+			<Item Cat="9" Index="353" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="14" /> <!-- Alchemist Red Spirit Pants -->
 		</List>
 		<List ID="4" Name="2nd Lucky Gloves Ticket">
 			<Item Cat="10" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Gloves -->
@@ -185,6 +189,7 @@
 			<Item Cat="10" Index="250" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="11" /> <!-- Light Ray Gloves -->
 			<Item Cat="10" Index="268" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="12" /> <!-- Mage Legendary Gloves -->
 			<Item Cat="10" Index="316" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="13" /> <!-- Steel Plate Gloves -->
+			<Item Cat="10" Index="353" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="14" /> <!-- Alchemist Red Spirit Gloves -->
 		</List>
 		<List ID="5" Name="2nd Lucky Boots Ticket">
 			<Item Cat="11" Index="66" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Dark Soul Boots -->
@@ -201,6 +206,7 @@
 			<Item Cat="11" Index="250" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="11" /> <!-- Light Ray Boots -->
 			<Item Cat="11" Index="268" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="12" /> <!-- Mage Legendary Boots -->
 			<Item Cat="11" Index="316" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="13" /> <!-- Steel Plate Boots -->
+			<Item Cat="11" Index="353" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="14" /> <!-- Alchemist Red Spirit Boots -->
 		</List>
 	</TicketItemList>
 

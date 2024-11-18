@@ -463,6 +463,7 @@
 		<Buff Index="436" EffectType="337" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Battle Glory" Description="Increases attack and combat power." />
 		<Buff Index="437" EffectType="337" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="0" Name="Battle Glory Enhancement" Description="Increases attack and combat power." />
 		<Buff Index="442" EffectType="230" ItemType="20" ItemIndex="256" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="(Bound) Divine Spirit" Description="(Bound) Summons the Divine Spirit." />
+		<Buff Index="443" EffectType="399" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Confusion Stone" Description="" />
 	</General>
 	<Period>
 		<Buff Index="179" EffectType1="0" EffectValue1="25" EffectType2="0" EffectValue2="0" Duration="604800" Name="Fire Tower" />

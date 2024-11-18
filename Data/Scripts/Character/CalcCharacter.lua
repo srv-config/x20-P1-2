@@ -25,6 +25,7 @@ CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker,
 CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
 CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
 CLASS_ILLUSIONKNIGHT								  = 13	-- Illusion Knight, Mirage Knight, Illusion Master, Mystic Knight
+CLASS_ALCHEMIST										  = 14  -- Alchemist, Alchemic Magician, Alchemic Master, Alchemic Force, Creator
 
 -- Character Damage - Fist Fighting - (Dark Wizard, Soul Master, Grand Master)
 function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
@@ -252,6 +253,20 @@ function IllusionKnightDamageCalc(Strength, Dexterity, Vitality, Energy)
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
 
+function AlchemistDamageCalc(Strength, Dexterity, Vitality, Energy)
+	local AttackDamageMinLeft = 0
+	local AttackDamageMaxLeft = 0
+	local AttackDamageMinRight = 0
+	local AttackDamageMaxRight = 0
+	
+	AttackDamageMinLeft = Strength / 8 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Strength / 8 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+	
+	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
+end
+
 -- Character Magic Damage - (Dark Wizard, Soul Master, Grand Master)
 function WizardMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
@@ -423,6 +438,17 @@ function IllusionKnightMagicDamageCalc(Energy)
 	return MagicDamageMin, MagicDamageMax
 end
 
+-- Character Magic Damage - (Alchemist, Alchemic Magician, Alchemic Master, Alchemic Force, Creator)
+function AlchemistMagicDamageCalc(Energy)
+	local MagicDamageMin = 0
+	local MagicDamageMax = 0
+	
+	MagicDamageMin = Energy / 4 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 3 -- Maximum Magic Damage
+	
+	return MagicDamageMin, MagicDamageMax
+end
+
 -- Character Attack Speed - for Anti-Hack purpose only, does not take effect in Game for versions lower than w Season 8 Episode 3
 function CalcAttackSpeed(Class, Dexterity)
 	local AttackSpeed = 0
@@ -470,6 +496,9 @@ function CalcAttackSpeed(Class, Dexterity)
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		AttackSpeed = Dexterity / 10
 		MagicSpeed = Dexterity / 10
+	elseif(Class == CLASS_ALCHEMIST) then
+		AttackSpeed = Dexterity / 20
+		MagicSpeed = Dexterity / 10
 	end
 	
 	return AttackSpeed, MagicSpeed
@@ -508,6 +537,8 @@ function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy,
 		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 2
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
+	elseif(Class == CLASS_ALCHEMIST) then
+		AttackSuccessRate = TotalLevel * 5 + Dexterity * 1.5 + Strength / 4
 	end
 	
 	return AttackSuccessRate
@@ -545,6 +576,8 @@ function CalcDefenseSuccessRate_PvM(Class, Strength, Dexterity, Vitality, Energy
 	elseif(Class == CLASS_LEMURIAMAGE) then
 		DefenseSuccessRate = Dexterity / 3
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
+		DefenseSuccessRate = Dexterity / 3
+	elseif(Class == CLASS_ALCHEMIST) then
 		DefenseSuccessRate = Dexterity / 3
 	end
 	
@@ -591,6 +624,8 @@ function CalcDefense(Class, Strength, Dexterity, IsSpecialBuff)
 		Defense = Dexterity / 4
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		Defense = Dexterity / 10 + Strength / 5
+	elseif(Class == CLASS_ALCHEMIST) then
+		Defense = Dexterity / 2
 	end
 	
 	return Defense
@@ -629,6 +664,8 @@ function CalcAttackSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy,
 		AttackRate = Dexterity * 4 + 3 * TotalLevel
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		AttackRate = Dexterity * 2.5 + 3 * TotalLevel
+	elseif(Class == CLASS_ALCHEMIST) then
+		AttackRate = Dexterity * 4 + 3 * TotalLevel
 	end
 	
 	return AttackRate
@@ -667,6 +704,8 @@ function CalcDefenseSuccessRate_PvP(Class, Strength, Dexterity, Vitality, Energy
 		DefenseRate = Dexterity / 4 + 2 * TotalLevel
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		DefenseRate = Dexterity / 4 + 2 * TotalLevel
+	elseif(Class == CLASS_ALCHEMIST) then
+		DefenseRate = Dexterity / 3 + 2 * TotalLevel
 	end
 	
 	return DefenseRate
@@ -719,6 +758,9 @@ function ElementalDamageCalc(Class, Strength, Dexterity, Vitality, Energy, ItemM
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		MinDamage = ItemMinDamage + (Dexterity / 10)
 		MaxDamage = ItemMaxDamage + (Dexterity / 7)
+	elseif(Class == CLASS_ALCHEMIST) then
+		MinDamage = ItemMinDamage + (Energy / 6)
+		MaxDamage = ItemMaxDamage + (Energy / 4)
 	end
 	
 	return MinDamage, MaxDamage
@@ -757,6 +799,8 @@ function ElementalAttackRateCalc_MvP(Class, NormalLevel, MasterLevel, Strength, 
 		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_ALCHEMIST) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
 	end
 	
 	return AttackSuccessRate
@@ -794,6 +838,8 @@ function ElementalAttackRateCalc_PvP(Class, NormalLevel, MasterLevel, Strength, 
 	elseif(Class == CLASS_LEMURIAMAGE) then
 		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
+		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
+	elseif(Class == CLASS_ALCHEMIST) then
 		AttackSuccessRate = (3 * Dexterity / 2) + (5 * TotalLevel) + (Strength / 4)
 	end
 	
@@ -836,6 +882,8 @@ function ElementalDefenseCalc(Class, Strength, Dexterity, Vitality, Energy, IsSp
 		Defense = (Energy / 5) + (Dexterity / 9)
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		Defense = (Strength / 6) + (Dexterity / 15)
+	elseif(Class == CLASS_ALCHEMIST) then
+		Defense = (Energy / 5) + (Dexterity / 8)
 	end
 	
 	return Defense
@@ -872,6 +920,8 @@ function ElementalDefenseRateCalc(Class, Strength, Dexterity, Energy, Vitality, 
 	elseif(Class == CLASS_LEMURIAMAGE) then
 		DefenseRate = Dexterity / 3
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
+		DefenseRate = Dexterity / 3
+	elseif(Class == CLASS_ALCHEMIST) then
 		DefenseRate = Dexterity / 3
 	end
 	
@@ -910,6 +960,8 @@ function CalcAbilityGauge(Class, Strength, Dexterity, Vitality, Energy, Leadersh
 		AG = (Strength * 0.2) + (Dexterity * 0.24) + (Vitality * 0.2) + (Energy * 0.4)
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		AG = (Strength * 0.3) + (Dexterity * 0.5) + (Vitality * 0.2) + (Energy * 0.2)
+	elseif(Class == CLASS_ALCHEMIST) then
+		AG = (Strength * 0.2) + (Dexterity * 0.2) + (Vitality * 0.2) + (Energy * 0.4)
 	end
 	
 	return AG
