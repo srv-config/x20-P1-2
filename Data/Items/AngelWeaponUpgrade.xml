@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2019 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -44,5 +44,6 @@
 		<Item NeedCat="5"  NeedIndex="36"  ResultCat="5"  ResultIndex="50" /> <!-- Divine Stick of the Archangel ~> Blessed Divine Arch Stick -->
 		<Item NeedCat="5"  NeedIndex="93"  ResultCat="5"  ResultIndex="94" /> <!-- Archangel's Absolute Orb ~> Blessed Archangel's Absolute Orb -->
 		<Item NeedCat="0"  NeedIndex="113"  ResultCat="0"  ResultIndex="114" /> <!-- Archangel's Absolute Blade ~> Blessed Archangel's Absolute Blade -->
+		<Item NeedCat="5"  NeedIndex="124"  ResultCat="5"  ResultIndex="125" /> <!-- Archangel's Absolute Wand ~> Blessed Archangel's Absolute Wand -->
 	</Upgrade>
 </ArchangelWeapon>

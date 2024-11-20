@@ -27,6 +27,7 @@ CLASS_GUNCRUSHER									  = 10
 CLASS_LIGHTWIZARD									  = 11
 CLASS_LEMURIAMAGE									  = 12
 CLASS_ILLUSIONKNIGHT								  = 13
+CLASS_ALCHEMIST										  = 14							   
 
 -- SkillID: 1, Poison
 function PoisonCalc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -1664,4 +1665,30 @@ function IllusionKnightAvatarCalc(Strength, Dexterity, Vitality, Energy, InDamag
 	
 	return OutDamageMin, OutDamageMax, OutLife
 end
- 
+
+-- SkillID: 2091, Alchemy: Ignition Bomber
+function AlchemistAngelHomunculus(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 2092, Alchemy: Countless Weapon
+function AlchemistIgnitionBomber(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 2093, Alchemy: Countless Weapon
+function AlchemistCountlessWeapon(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
