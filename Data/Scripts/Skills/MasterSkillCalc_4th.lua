@@ -575,7 +575,9 @@ function Heal_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vit
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
-			SkillEffect = Energy / 5 + 5	
+			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -625,6 +627,8 @@ function Attack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, V
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -666,6 +670,8 @@ function Defense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, 
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
@@ -709,6 +715,8 @@ function ElementalAttack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dex
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = InEffect
@@ -750,6 +758,8 @@ function ElementalDefense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, De
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
