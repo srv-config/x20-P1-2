@@ -350,6 +350,16 @@
 				<MuunInventory List="" />
 				<Buffs List="0;7" />
 			</Character>
+			
+			<Character Class="14" Evo="1" Level="0" MasterLevel="0" Resets="0" MarlonFirstQuest="0" MarlonSecondQuest="0" GiantQuest="0" GiantMountType="0" Zen="1000" Ruud="100" InventoryExpansion="0"> <!-- Alchemist -->
+				<Stats Strength="0" Dexterity="0" Vitality="0" Energy="0" Command="0" FreeStatPts="400" FreeMasterPts3rd="0" FreeMasterPts4th="0" />
+				<Equipment WeaponRight="177" WeaponLeft="-1" Helm="172" Armor="173" Pants="174" Gloves="175" Boots="176" Wings="95" Helper="170" Pendant="110" RingRight="126" RingLeft="127" Pentagram="-1" EarringRight="-1" EarringLeft="-1" />
+				<Skills List="" />
+				<Inventory List="" />
+				<EventInventory List="" />
+				<MuunInventory List="" />
+				<Buffs List="0;7" />
+			</Character>
 		</Server>
 	</ServerList>
 	
@@ -517,6 +527,13 @@
 		<!-- Helpers -->
 		<Item ID="170" Cat="13" Index="0" Durability="0" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="-1" Duration="0" Name="Guardian Angel" />
 		<Item ID="171" Cat="13" Index="1" Durability="0" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="-1" Duration="0" Name="Imp" />
+		<!-- Alchemist Equipment -->
+		<Item ID="172" Cat="7" Index="352" Durability="0" Level="9" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Alchemist Holy Spirit Helmet" />
+		<Item ID="173" Cat="8" Index="352" Durability="0" Level="9" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Alchemist Holy Spirit Armor" />
+		<Item ID="174" Cat="9" Index="352" Durability="0" Level="9" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Alchemist Holy Spirit Pants" />
+		<Item ID="175" Cat="10" Index="352" Durability="0" Level="9" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Alchemist Holy Spirit Gloves" />
+		<Item ID="176" Cat="11" Index="352" Durability="0" Level="9" Skill="0" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Alchemist Holy Spirit Boots" />
+		<Item ID="177" Cat="5" Index="112" Durability="0" Level="9" Skill="1" Luck="1" Option="3" Exc="-1" SetItem="0" SocketCount="0" ElementalItem="0" Duration="0" Name="Amber Wand" />
 	</ItemList>
 	
 	<BuffList>

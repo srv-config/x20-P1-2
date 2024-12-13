@@ -182,4 +182,10 @@
 	<Element Number="169" Type="20" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Twisted Condra AOE Attack" />
 	<Element Number="170" Type="3" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="350" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Twisted Condra Mana Reduction" />
 	<Element Number="171" Type="4" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="20" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Twisted Condra AG Reduction" />
+	<Element Number="172" Type="20" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Devil Sword Attack" />
+	<Element Number="173" Type="20" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Devil Scythe Attack" />
+	<Element Number="174" Type="20" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Devil Sorcerer Evil Spirit Attack" />
+	<Element Number="175" Type="3" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="450" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Devil Sorcerer Mana Reduction" />
+	<Element Number="176" Type="4" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="30" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" Name="Devil Sorcerer AG Reduction" />
+	<Element Number="177" Type="0" SuccessRate="3" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" Name="Kardamahal Underground Monsters Stun" />
 </MonsterSkill>

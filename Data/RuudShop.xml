@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2023 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -32,6 +32,8 @@
 //		11: Light Wizard
 //		12: Mage Lemuria
 //		13: Illusion Knight
+//		14: Alchemist
+//
 //	Name: Name of the character class, used for in-file description and logging purpose only
 //
 // ### RuudShop::Character::Item ###
@@ -294,12 +296,21 @@
 		<Item Cat="5" Index="86" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Orb -->
 		<Item Cat="15" Index="53" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Scroll of Ultimate Force -->
 	</Character>
-		<Character Class="13" Name="Illusion Knight">
+	<Character Class="13" Name="Illusion Knight">
 		<Item Cat="20" Index="89" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Helm of Sealed Longing -->
 		<Item Cat="20" Index="90" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Armor of Sealed Longing -->
 		<Item Cat="20" Index="91" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Pants of Sealed Longing -->
 		<Item Cat="20" Index="92" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Boots of Sealed Longing -->
 		<Item Cat="12" Index="91" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Blade Storm Orb -->
-		<Item Cat="0" Index="105" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Blade -->	
+		<Item Cat="0" Index="105" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Blade -->
+	</Character>
+	<Character Class="14" Name="Alchemist">
+		<Item Cat="20" Index="240" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Helm of Sealed Element -->
+		<Item Cat="20" Index="241" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Armor of Sealed Element -->
+		<Item Cat="20" Index="242" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Pants of Sealed Element -->
+		<Item Cat="20" Index="243" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Blood Angel Boots of Sealed Element -->
+		<Item Cat="15" Index="66" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Softness: Countless Weapon Lawbook -->
+		<Item Cat="5" Index="114" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Wand -->
+		<Item Cat="5" Index="133" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="100000" /> <!-- Blood Angel Elixir -->	
 	</Character>
 </RuudShop>

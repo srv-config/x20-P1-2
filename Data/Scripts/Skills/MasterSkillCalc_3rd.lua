@@ -26,6 +26,7 @@ CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker,
 CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
 CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
 CLASS_ILLUSIONKNIGHT								  = 13	-- Illusion Knight, Mirage Knight, Illusion Master, Mystic Knight
+CLASS_ALCHEMIST										  = 14
 
 -- SkillID: 378, 483, Flame Strengthener
 function FlameCalc_Master(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -307,6 +308,8 @@ function ElfHeal_Level1(TargetClass, Index, TargetIndex, Strength, Dexterity, Vi
 			SkillEffect = Energy / 5 + 5
 		elseif (TargetClass == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_ALCHEMIST) then
+            SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -363,6 +366,8 @@ function ElfDefense_Level1(Class, Index, TargetIndex, Strength, Dexterity, Vital
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -412,6 +417,8 @@ function ElfDefense_Level2(Class, Index, TargetIndex, Strength, Dexterity, Vital
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -454,6 +461,8 @@ function ElfAttack_Level1(Class, Index, TargetIndex, Strength, Dexterity, Vitali
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -495,6 +504,8 @@ function ElfAttack_Level2(Class, Index, TargetIndex, Strength, Dexterity, Vitali
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
@@ -1120,6 +1131,9 @@ function ExpansionWizardryCalc_Level1(Class, Energy, MagicDamageMax, SkillTreeVa
 	elseif (Class == CLASS_LEMURIAMAGE) then
 		SkillEffect1 = Energy / 9 * 0.20
 		SkillEffect2 = MagicDamageMax / 100.0 * SkillTreeValue
+	elseif (Class == CLASS_ALCHEMIST) then
+		SkillEffect1 = Energy / 9 * 0.20
+		SkillEffect2 = MagicDamageMax / 100.0 * SkillTreeValue
 	end
 
 	return SkillEffect1, SkillEffect2, SkillTime
@@ -1138,6 +1152,9 @@ function ExpansionWizardryCalc_Level2(Class, Energy, MagicDamageMax, SkillTreeVa
 		SkillEffect1 = Energy / 9 * 0.20
 		SkillEffect2 = MagicDamageMax / 100.0 * SkillTreeValue
 	elseif (Class == CLASS_LEMURIAMAGE) then
+		SkillEffect1 = Energy / 9 * 0.20
+		SkillEffect2 = MagicDamageMax / 100.0 * SkillTreeValue
+	elseif (Class == CLASS_ALCHEMIST) then
 		SkillEffect1 = Energy / 9 * 0.20
 		SkillEffect2 = MagicDamageMax / 100.0 * SkillTreeValue
 	end
@@ -1506,6 +1523,8 @@ function LemuriaMageDefense_Level1(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 16
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 2 + Energy / 16
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 2 + Energy / 16
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 16
@@ -1547,6 +1566,8 @@ function LemuriaMageDefense_Level2(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 16
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 2 + Energy / 16
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 2 + Energy / 16
 		end
 	elseif (Index == TargetIndex) then
@@ -1590,6 +1611,8 @@ function LemuriaMageAttack_Level1(Class, Index, TargetIndex, Energy)
 			SkillEffect = 3 + Energy / 15
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 3 + Energy / 15
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 3 + Energy / 15
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 15
@@ -1631,6 +1654,8 @@ function LemuriaMageAttack_Level2(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 3 + Energy / 15
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 3 + Energy / 15
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 3 + Energy / 15
 		end
 	elseif (Index == TargetIndex) then
@@ -1698,6 +1723,8 @@ function LemuriaMageHeal_Level1(TargetClass, Index, TargetIndex, Energy)
 			SkillEffect = Energy / 10 + 5
 		elseif (TargetClass == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = Energy / 10 + 5
+		elseif (TargetClass == CLASS_ALCHEMIST) then
+            SkillEffect = Energy / 10 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 10 + 5
@@ -1788,6 +1815,43 @@ function IllusionKnightBladeStorm_MasterLevel1_Calc(InDamage, Strength, Dexterit
 	elseif (BarrageCount == 3) then
 		OutDamage = (InDamage * (200 + (Strength / 30) + (Dexterity / 30))) / 100;
 	end
+
+	return OutDamage
+end
+
+-- SkillID: 900, Angel Homunculus Strengthener
+function AlchemistAngelHomunculus_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+
+-- SkillID: 901, Angel Homunculus Mastery
+function AlchemistAngelHomunculus_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 903, Ignition Bomber Strengthener
+function AlchemistIgnitionBomber_MasterLevel1_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 903, Ignition Bomber Mastery
+function AlchemistIgnitionBomber_MasterLevel2_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
 
 	return OutDamage
 end

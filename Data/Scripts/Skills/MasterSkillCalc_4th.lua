@@ -25,7 +25,8 @@ CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughtere
 CLASS_GUNCRUSHER									  = 10	-- Gun Crusher, Gun Breaker, Master Gun Breaker, Heist Gun Crusher
 CLASS_LIGHTWIZARD									  = 11	-- Light Wizard, Shining Wizard, Luminous Wizard
 CLASS_LEMURIAMAGE									  = 12	-- Lemuria Mage, Warmage, Archmage, Mystic Mage
-CLASS_ILLUSIONKNIGHT								  = 13	-- Illusion Knight, Mirage Knight, Illusion Master, Mystic Knight	
+CLASS_ILLUSIONKNIGHT								  = 13	-- Illusion Knight, Mirage Knight, Illusion Master, Mystic Knight
+CLASS_ALCHEMIST										  = 14
 
 -- SkillID: 1078, 1088, Evil Spirit Enhancement Skill
 function EvilSpiritCalc_4thEnchant(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -574,7 +575,9 @@ function Heal_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, Vit
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
-			SkillEffect = Energy / 5 + 5	
+			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -624,6 +627,8 @@ function Attack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, V
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -665,6 +670,8 @@ function Defense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dexterity, 
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
@@ -708,6 +715,8 @@ function ElementalAttack_4thEnchant_Elf(Class, Index, TargetIndex, Strength, Dex
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = InEffect
@@ -749,6 +758,8 @@ function ElementalDefense_4thEnchant_Elf(Class, Index, TargetIndex, Strength, De
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
@@ -812,6 +823,34 @@ function IllusionKnightBladeStorm_4thEnchant_Calc(InDamage, Strength, Dexterity,
 	elseif (BarrageCount == 5) then
 		OutDamage = (InDamage * (200 + (Strength / 30) + (Dexterity / 30))) / 100;
 	end
+
+	return OutDamage
+end
+
+-- SkillID: 1237, Alchemy: Angel Homunculus Enhancement Skill
+function AlchemistAngelHomunculus_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+
+-- SkillID: 1238, Alchemy: Ignition Bomber Enhancement Skill
+function AlchemistIgnitionBomber_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 1239, Alchemy: Countess Weapon Enhancement Skill
+function AlchemistCountlessWeapon_4thEnchant_Calc(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
 
 	return OutDamage
 end

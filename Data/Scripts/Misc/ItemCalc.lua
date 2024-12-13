@@ -12,7 +12,8 @@ CLASS_SLAYER									  	  = 9
 CLASS_GUNCRUSHER									  = 10
 CLASS_WHITEWIZARD									  = 11
 CLASS_LEMURIAMAGE									  = 12
-CLASS_ILLUSIONKNIGHT								  = 13								  
+CLASS_ILLUSIONKNIGHT								  = 13
+CLASS_ALCHEMIST										  = 14						  
 
 -- Item Kind B Wings List
 ITEM_KIND_B_SMALL_WING = 22

@@ -3,10 +3,14 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2023 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
+//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ Changes to the file require modification of RewardItemExchange.txt (Lang.mpr) on Game CLient side
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### VoucherItemExchange ###
 //	Enable: Deactivates or activates the system, 0/1
@@ -68,6 +72,7 @@
 				<Reward ID="11" ItemCat="12" ItemIndex="160" ItemLevel="11" Luck="1" Option="1" Duration="2592000" />
 				<Reward ID="12" ItemCat="12" ItemIndex="152" ItemLevel="11" Luck="1" Option="1" Duration="2592000" />
 				<Reward ID="13" ItemCat="12" ItemIndex="178" ItemLevel="11" Luck="1" Option="1" Duration="2592000" />
+				<Reward ID="14" ItemCat="12" ItemIndex="196" ItemLevel="11" Luck="1" Option="1" Duration="2592000" />
 			</RewardItemList>
 			<RewardItemOptions>
 				<OptionSet ID="0" OptionID1="3" OptionVal1="2" OptionID2="6" OptionVal2="2" OptionID3="-1" OptionVal3="-1" OptionID4="-1" OptionVal4="-1" ShuffleEffect="0" Rate="16666" />

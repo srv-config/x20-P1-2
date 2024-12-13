@@ -3,7 +3,7 @@
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
 // == www.igcn.mu
-// == (C) 2010-2023 IGC-Network (R)
+// == (C) 2010-2024 IGC-Network (R)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
@@ -1089,6 +1089,80 @@
 			<Skill Index="102" ReqMinPoint="1" MaxPoint="20" ParentSkill1="368" ParentSkill2="0" MagicNumber="372" ValueType="0" Name="Restores all SD" />
 			<Skill Index="104" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="370" ValueType="0" Name="Increases Double Damage Rate" />
 			<Skill Index="107" ReqMinPoint="1" MaxPoint="20" ParentSkill1="628" ParentSkill2="0" MagicNumber="629" ValueType="0" Name="Absorb Shield" />
+			<Skill Index="108" ReqMinPoint="1" MaxPoint="20" ParentSkill1="370" ParentSkill2="0" MagicNumber="371" ValueType="0" Name="Increases chance of Ignore Defense" />
+		</Tree>
+	</Class>
+	<Class ID="16384">
+		<Tree Type="0"> <!-- Build - Passive (Alchemist Master) -->
+			<Skill Index="1" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="300" ValueType="0" Name="Durability Reduction (1)" />
+			<Skill Index="4" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="301" ValueType="0" Name="PvP Defense Rate Increase" />
+			<Skill Index="6" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="302" ValueType="0" Name="Maximum SD increase" />
+			<Skill Index="8" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="303" ValueType="0" Name="Automatic Mana Recovery Increase" />
+			<Skill Index="9" ReqMinPoint="1" MaxPoint="20" ParentSkill1="300" ParentSkill2="0" MagicNumber="305" ValueType="0" Name="Durability Reduction (2)" />
+			<Skill Index="10" ReqMinPoint="1" MaxPoint="20" ParentSkill1="302" ParentSkill2="0" MagicNumber="306" ValueType="0" Name="SD Recovery Speed Increase" />
+			<Skill Index="12" ReqMinPoint="1" MaxPoint="20" ParentSkill1="303" ParentSkill2="0" MagicNumber="307" ValueType="0" Name="Automatic HP Recovery Increase" />
+			<Skill Index="14" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="309" ValueType="0" Name="Defense Increase" />
+			<Skill Index="15" ReqMinPoint="1" MaxPoint="10" ParentSkill1="0" ParentSkill2="0" MagicNumber="746" ValueType="0" Name="Elemental DEF Increase" />
+			<Skill Index="16" ReqMinPoint="1" MaxPoint="20" ParentSkill1="307" ParentSkill2="0" MagicNumber="310" ValueType="0" Name="Automatic AG Recovery Increase" />
+			<Skill Index="17" ReqMinPoint="1" MaxPoint="20" ParentSkill1="305" ParentSkill2="0" MagicNumber="312" ValueType="0" Name="Durability Reduction (3)" />
+			<Skill Index="18" ReqMinPoint="1" MaxPoint="20" ParentSkill1="309" ParentSkill2="0" MagicNumber="313" ValueType="0" Name="Defense Success Rate Increase" />
+			<Skill Index="23" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="315" ValueType="0" Name="Armor Set Bonus Increase" />
+			<Skill Index="24" ReqMinPoint="1" MaxPoint="20" ParentSkill1="315" ParentSkill2="0" MagicNumber="316" ValueType="0" Name="Vengeance" />
+			<Skill Index="25" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="317" ValueType="0" Name="Energy Increase" />
+			<Skill Index="26" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="318" ValueType="0" Name="Stamina Increase" />
+			<Skill Index="27" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="319" ValueType="0" Name="Agility Increase" />
+			<Skill Index="28" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="320" ValueType="0" Name="Strength Increase" />
+			<Skill Index="30" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="897" ValueType="0" Name="Wing of Guardian Defense PowUp" />
+			<Skill Index="34" ReqMinPoint="1" MaxPoint="20" ParentSkill1="897" ParentSkill2="0" MagicNumber="898" ValueType="0" Name="Wing of Guardian Attack PowUp" />
+			<Skill Index="35" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="899" ValueType="0" Name="Steel Armor" />
+		</Tree>
+		<Tree Type="1"> <!-- Sage - Skill Enhancement (Alchemist Master) -->
+			<Skill Index="37" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="325" ValueType="0" Name="Attack Success Rate Increase" />
+			<Skill Index="41" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="900" ValueType="0" Name="Angel Homunculus Strengthener" />
+			<Skill Index="42" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="378" ValueType="1" Name="Flame Strengthener" />
+			<Skill Index="43" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="380" ValueType="0" Name="Expansion of Wizardry Power Up" />
+			<Skill Index="44" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="379" ValueType="1" Name="Lightning Strengthener" />
+			<Skill Index="45" ReqMinPoint="10" MaxPoint="10" ParentSkill1="900" ParentSkill2="0" MagicNumber="901" ValueType="0" Name="Angel Homunculus Mastery" />
+			<Skill Index="46" ReqMinPoint="1" MaxPoint="20" ParentSkill1="378" ParentSkill2="0" MagicNumber="381" ValueType="1" Name="Inferno Strengthener" />
+			<Skill Index="47" ReqMinPoint="1" MaxPoint="20" ParentSkill1="380" ParentSkill2="0" MagicNumber="383" ValueType="0" Name="Expansion of Wizardry Mastery" />
+			<Skill Index="48" ReqMinPoint="1" MaxPoint="20" ParentSkill1="379" ParentSkill2="0" MagicNumber="382" ValueType="1" Name="Blast Strengthener" />
+			<Skill Index="49" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="902" ValueType="0" Name="Magic Mastery" />
+			<Skill Index="51" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="334" ValueType="0" Name="Maximum Life Increase" />
+			<Skill Index="52" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="387" ValueType="1" Name="Decay Strengthener" />
+			<Skill Index="55" ReqMinPoint="1" MaxPoint="20" ParentSkill1="334" ParentSkill2="0" MagicNumber="338" ValueType="0" Name="Maximum Mana Increase" />
+			<Skill Index="56" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="389" ValueType="1" Name="Ice Strengthener" />
+			<Skill Index="57" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="390" ValueType="1" Name="Meteor Strengthener" />
+			<Skill Index="58" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="903" ValueType="0" Name="Ignition Bomber Strengthener" />
+			<Skill Index="59" ReqMinPoint="1" MaxPoint="20" ParentSkill1="338" ParentSkill2="0" MagicNumber="341" ValueType="0" Name="Maximum AG Increase" />
+			<Skill Index="60" ReqMinPoint="1" MaxPoint="20" ParentSkill1="389" ParentSkill2="0" MagicNumber="391" ValueType="1" Name="Ice Storm Strengthener" />
+			<Skill Index="62" ReqMinPoint="10" MaxPoint="10" ParentSkill1="903" ParentSkill2="0" MagicNumber="904" ValueType="0" Name="Ignition Bomber Mastery" />
+			<Skill Index="63" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="743" ValueType="0" Name="Max HP Boost" />
+			<Skill Index="66" ReqMinPoint="10" MaxPoint="10" ParentSkill1="0" ParentSkill2="0" MagicNumber="495" ValueType="0" Name="Earth Prison" />
+			<Skill Index="68" ReqMinPoint="10" MaxPoint="10" ParentSkill1="0" ParentSkill2="0" MagicNumber="905" ValueType="0" Name="Confusion Stone Strengthener" />
+			<Skill Index="69" ReqMinPoint="10" MaxPoint="10" ParentSkill1="0" ParentSkill2="0" MagicNumber="642" ValueType="0" Name="Illusion" />
+			<Skill Index="70" ReqMinPoint="1" MaxPoint="20" ParentSkill1="495" ParentSkill2="0" MagicNumber="497" ValueType="0" Name="Earth Prison Strengthener" />
+			<Skill Index="72" ReqMinPoint="1" MaxPoint="20" ParentSkill1="905" ParentSkill2="0" MagicNumber="906" ValueType="0" Name="Confusion Stone Mastery" />
+		</Tree>
+		<Tree Type="2"> <!-- Element - Attack Enhancement (Alchemist Master) -->
+			<Skill Index="73" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="347" ValueType="0" Name="Attack Rate" />
+			<Skill Index="77" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="907" ValueType="0" Name="Wand Strengthen" />
+			<Skill Index="79" ReqMinPoint="1" MaxPoint="10" ParentSkill1="0" ParentSkill2="0" MagicNumber="909" ValueType="0" Name="Elixir Strengthen" />
+			<Skill Index="83" ReqMinPoint="1" MaxPoint="10" ParentSkill1="909" ParentSkill2="0" MagicNumber="910" ValueType="0" Name="Elixir Mastery" />
+			<Skill Index="86" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="357" ValueType="0" Name="Mana Reduction" />
+			<Skill Index="87" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="358" ValueType="0" Name="Monster Attack SD Increment" />
+			<Skill Index="88" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="359" ValueType="0" Name="Monster Attack Life Increment" />
+			<Skill Index="90" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="405" ValueType="0" Name="Minimum Wizardry Increase" />
+			<Skill Index="92" ReqMinPoint="1" MaxPoint="20" ParentSkill1="359" ParentSkill2="0" MagicNumber="362" ValueType="0" Name="Monster Attack Mana Increment" />
+			<Skill Index="94" ReqMinPoint="1" MaxPoint="20" ParentSkill1="405" ParentSkill2="0" MagicNumber="407" ValueType="0" Name="Maximum Wizardry Increase" />
+			<Skill Index="96" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="366" ValueType="0" Name="Increases critical damage rate" />
+			<Skill Index="97" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="367" ValueType="0" Name="Restores all Mana" />
+			<Skill Index="98" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="368" ValueType="0" Name="Restores all HP" />
+			<Skill Index="99" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="639" ValueType="0" Name="Absorb Life" />
+			<Skill Index="100" ReqMinPoint="1" MaxPoint="20" ParentSkill1="366" ParentSkill2="0" MagicNumber="369" ValueType="0" Name="Increases excellent damage rate" />
+			<Skill Index="101" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="641" ValueType="0" Name="Grand Magic PowUp" />
+			<Skill Index="102" ReqMinPoint="1" MaxPoint="20" ParentSkill1="368" ParentSkill2="0" MagicNumber="372" ValueType="0" Name="Restores all SD" />
+			<Skill Index="104" ReqMinPoint="1" MaxPoint="20" ParentSkill1="0" ParentSkill2="0" MagicNumber="370" ValueType="0" Name="Increases Double Damage Rate" />
+			<Skill Index="107" ReqMinPoint="1" MaxPoint="20" ParentSkill1="639" ParentSkill2="0" MagicNumber="640" ValueType="0" Name="SD Absorption" />
 			<Skill Index="108" ReqMinPoint="1" MaxPoint="20" ParentSkill1="370" ParentSkill2="0" MagicNumber="371" ValueType="0" Name="Increases chance of Ignore Defense" />
 		</Tree>
 	</Class>

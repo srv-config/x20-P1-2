@@ -82,6 +82,7 @@
 //		~ 11: Damage increase of 4th wings of LW
 //		~ 12: Damage increase of 4th wings of LM
 //		~ 13: Damage increase of 4th wings of IK
+//		~ 14: Damage increase of 4th wings of AC
 //
 // ### FormulaData::Wing4th5thDefense::Formula ###
 //	ID: Next unique ID of formula, starts from 0
@@ -130,6 +131,7 @@
 //		~ 54: Skill Attack Power Increase of Dark Lord class
 //		~ 55: Battle Glory Combat Power Increase
 //		~ 56: Battle Glory Attack Power Increase
+//		~ 57: 
 //
 // ### FormulaData::GuardianItem::Formula ###
 //	ID: Next unique ID of formula, starts from 0
@@ -715,6 +717,7 @@
 		<Formula ID="11" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 		<Formula ID="12" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 		<Formula ID="13" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
+		<Formula ID="14" Data="100+(%d^1.2*11.8)" /> <!-- WingsLevel -->
 	</Wing4thDamage>
 	<Wing4th5thDefense>
 		<Formula ID="0" Data="(140+(%d^1.5*15))" /> <!-- WingsLevel -->
@@ -1191,6 +1194,7 @@
 		<Formula ID="283" Data="(((15+(%d*15))+((%d+1)*%d*2))*1.59+100)" /> <!-- CardLevel, CardLevel, CardLevel -->
 		<Formula ID="284" Data="%d*1" /> <!-- ReqCardCount -->
 		<Formula ID="285" Data="%d*1000000" /> <!-- ReqCardCount -->
+		<Formula ID="286" Data="(((15+(%d*15))+((%d+1)*%d*2))*0.59+30)" /> <!-- CardLevel, CardLevel, CardLevel -->
 	</AbilityTree>
 	<PetItem>
 		<Formula ID="0" Data="50" /> <!-- None -->

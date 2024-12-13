@@ -27,6 +27,7 @@ CLASS_GUNCRUSHER									  = 10
 CLASS_LIGHTWIZARD									  = 11
 CLASS_LEMURIAMAGE									  = 12
 CLASS_ILLUSIONKNIGHT								  = 13
+CLASS_ALCHEMIST										  = 14							   
 
 -- SkillID: 1, Poison
 function PoisonCalc(Class, InDamage, Strength, Dexterity, Vitality, Energy)
@@ -272,6 +273,8 @@ function ComboSkillDamage(Class, Strength, Dexterity, Vitality, Energy, Command,
 		ComboDamage = (Strength * 1.5) + Dexterity + Energy
 	elseif(Class == CLASS_ILLUSIONKNIGHT) then
 		ComboDamage = (Strength * 1.5) + Dexterity + Energy
+	elseif(Class == CLASS_ALCHEMIST) then
+		ComboDamage = (Strength * 1.5) + Dexterity + Energy
 	end
 
  return ComboDamage
@@ -351,7 +354,9 @@ function ElfHeal(TargetClass, Index, TargetIndex, Strength, Dexterity, Vitality,
 		elseif (TargetClass == CLASS_LEMURIAMAGE) then
 			SkillEffect = Energy / 5 + 5
 		elseif (TargetClass == CLASS_ILLUSIONKNIGHT) then
-			SkillEffect = Energy / 5 + 5	
+			SkillEffect = Energy / 5 + 5
+		elseif (TargetClass == CLASS_ALCHEMIST) then
+			SkillEffect = Energy / 5 + 5			
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -394,6 +399,8 @@ function ElfAttack(Class, Index, TargetIndex, Strength, Dexterity, Vitality, Ene
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 3 + Energy / 7
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -435,6 +442,8 @@ function ElfDefense(Class, Index, TargetIndex, Strength, Dexterity, Vitality, En
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
@@ -529,6 +538,8 @@ function ElfElementalAttack(Class, Index, TargetIndex, Strength, Dexterity, Vita
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = InEffect
@@ -570,6 +581,8 @@ function ElfElementalDefense(Class, Index, TargetIndex, Strength, Dexterity, Vit
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = InEffect
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = InEffect
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = InEffect
 		end
 	elseif (Index == TargetIndex) then
@@ -1199,6 +1212,8 @@ function ExpansionWizardryCalc(Class, Energy)
 		SkillEffect = Energy / 9 * 0.20
 	elseif (Class == CLASS_LEMURIAMAGE) then
 		SkillEffect = Energy / 9 * 0.20
+	elseif (Class == CLASS_ALCHEMIST) then
+		SkillEffect = Energy / 9 * 0.20
 	end
 
 	return SkillEffect, SkillTime
@@ -1478,6 +1493,8 @@ function LemuriaMageHeal(TargetClass, Index, TargetIndex, Energy)
 			SkillEffect = Energy / 10 + 5
 		elseif (TargetClass == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = Energy / 10 + 5
+		elseif (TargetClass == CLASS_ALCHEMIST) then
+			SkillEffect = Energy / 10 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 10 + 5
@@ -1527,6 +1544,8 @@ function LemuriaMageDefense(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 16
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
 			SkillEffect = 2 + Energy / 16
+		elseif (Class == CLASS_ALCHEMIST) then
+			SkillEffect = 2 + Energy / 16
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 16
@@ -1568,6 +1587,8 @@ function LemuriaMageAttack(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_LEMURIAMAGE) then
 			SkillEffect = 3 + Energy / 15
 		elseif (Class == CLASS_ILLUSIONKNIGHT) then
+			SkillEffect = 3 + Energy / 15
+		elseif (Class == CLASS_ALCHEMIST) then
 			SkillEffect = 3 + Energy / 15
 		end
 	elseif (Index == TargetIndex) then
@@ -1664,4 +1685,43 @@ function IllusionKnightAvatarCalc(Strength, Dexterity, Vitality, Energy, InDamag
 	
 	return OutDamageMin, OutDamageMax, OutLife
 end
- 
+
+-- SkillID: 240, Magic Shot
+function AlchemistMagicShot(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+	
+	if (BarrageCount == 1) then
+		OutDamage = (InDamage * 1.0) * (165 + (Energy / 65)) / 100
+	elseif (BarrageCount == 2) then
+		OutDamage = (InDamage * 1.0) * (165 + (Energy / 65)) / 100
+	end
+	
+	return OutDamage
+end
+
+-- SkillID: 2091, Alchemy: Ignition Bomber
+function AlchemistAngelHomunculus(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 2092, Alchemy: Countless Weapon
+function AlchemistIgnitionBomber(InDamage, Strength, Dexterity, Vitality, Energy)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
+
+-- SkillID: 2093, Alchemy: Countless Weapon
+function AlchemistCountlessWeapon(InDamage, Strength, Dexterity, Vitality, Energy, BarrageCount)
+	local OutDamage = 0
+
+	OutDamage = InDamage * (165 + (Energy / 65)) / 100
+
+	return OutDamage
+end
