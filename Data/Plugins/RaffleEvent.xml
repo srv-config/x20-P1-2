@@ -11,18 +11,30 @@
 // ### RaffleEvent ###
 //	Enable: Deactivates or activates the event, 0/1
 //
-// ### RaffleEvent::ActiveDay ###
-//	Sun: Enables event on Sunday, 0/1
-//	Mon: Enables event on Monday, 0/1
-//	Tue: Enables event on Tuesday, 0/1
-//	Wed: Enables event on Wednesday, 0/1
-//	Thu: Enables event on Thursday, 0/1
-//	Fri: Enables event on Friday, 0/1
-//	Sat: Enables event on Saturday, 0/1
-//
 // ### RaffleEvent::Schedule ###
 //	OpenTime: Event duration, time to buy coupons after event start, minutes
 //	EndTime: Time the event is closed after draw of the prize, minutes
+//
+// ### HideAndSeek::Schedule::Start ###
+//	Year: Year to start the event, -1 if not applies
+//	Month: Month number to start the event 1-12, -1 if not applies
+//	Day: Day of a month to start the event, 1-31, -1 if not applies
+//	DayOfWeek: Day of a week to start the event, -1 if not applies
+//		~ 1: Sunday
+//		~ 2: Monday
+//		~ 3: Tuesday
+//		~ 4: Wednesday
+//		~ 5: Thursday
+//		~ 6: Friday
+//		~ 7: Saturday
+//
+//	Hour: Hour to start the event, 0-23
+//	Minute: Minute to start the event: 0-59
+//	Second: Second to start the event, 0-59 or -1 if not applies
+//	Type:
+//		~ 0: Raffle Event
+//		~ 1: Lotto Event
+//		~ 2: HitOrder Event
 //
 // ### RaffleEvent::Raffle ###
 //	MaxCoupons: Total number of coupons available in the raffle, -1 for no limit
@@ -36,15 +48,6 @@
 //		~ 3: Ruud
 //
 //	PriceMoney: Amount of money in selected currency to charge for single coupon
-
-//
-// ### HideAndSeek::Schedule::Start ###
-//	Hour: Start hour, 0-23
-//	Minute: Start minute: 0-59
-//	Type:
-//		~ 0: Raffle Event
-//		~ 1: Lotto Event
-//		~ 2: HitOrder Event
 //
 // ### RaffleEvent::Lotto ###
 //	MaxCoupons: Total number of coupons available in the raffle, -1 for no limit
@@ -91,12 +94,10 @@
 -->
 
 <RaffleEvent Enable="0">
-	<ActiveDay Sun="1" Mon="1" Tue="1" Wed="1" Thu="1" Fri="1" Sat="1" />
-	
 	<Schedule OpenTime="15" EndTime="1">
-		<Start Hour="12" Minute="0" Type="0" />
-		<Start Hour="15" Minute="0" Type="1" />
-		<Start Hour="17" Minute="0" Type="2" />
+		<Start Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="0" Second="-1" Type="0" />
+		<Start Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="15" Minute="0" Second="-1" Type="1" />
+		<Start Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="17" Minute="0" Second="-1" Type="2" />
 	</Schedule>
 	
 	<Raffle MaxCoupons="-1" UserMaxCouponBuy="-1" WinnerCount="3" RewardItemBag="600" PriceType="0" PriceMoney="100" /> <!-- Type 0 -->
